@@ -1,4 +1,18 @@
-# Welcome to React Router!
+# Space Weather Website
+
+This is a frontend for the Space Weather API. It's a nice little app to show if there will be a geomagnetic storm today or in the near future, and perhaps an Aurora I can go and take silly photos of. 
+
+## TODO
+
+- API modules and calls
+- Zustand state management as I want to learn Zustand, no real use reason.  
+- index page showing current conditions. 
+  - Some sort of Three.js or other visualisation of the magnetosphere would be cool here
+- styling - can probably get away without ShadCN but I'll play it as it comes. 
+- Weather event history. I'll need to hook up a database to the API for this. 
+
+
+## React orig tech stack details
 
 A modern, production-ready template for building full-stack React applications using React Router.
 
