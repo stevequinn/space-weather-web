@@ -4,13 +4,19 @@ This is a frontend for the Space Weather API. It's a nice little app to show if 
 
 ## TODO
 
-- API modules and calls
+[x] API modules and calls
 - Zustand state management as I want to learn Zustand, no real use reason.  
-- index page showing current conditions. 
+[x] index page showing current conditions. 
   - Some sort of Three.js or other visualisation of the magnetosphere would be cool here
+  - This is kind of rough and straight from our AI overlords. Needs tweaking.
 - styling - can probably get away without ShadCN but I'll play it as it comes. 
 - Weather event history. I'll need to hook up a database to the API for this. 
 
+## Dev Notes
+
+### Building and Running Locally
+
+In order to run the built app locally (in prod mode) you should use the `npm run serve` command as this injects the non-VITE_ prefixed env vars needed for the app to run. In real production mode the standard `npm start` command will work as env vars are injected by the hosting platform.
 
 ## React orig tech stack details
 

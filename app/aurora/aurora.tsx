@@ -1,4 +1,4 @@
-import type { AuroraCheckResponse } from "~/api.server/types";
+import type { AuroraCheckResponse } from "~/api/.server/types";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
