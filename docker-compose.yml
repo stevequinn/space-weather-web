@@ -4,7 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      NODE_ENV: production
+      - NODE_ENV=production
+      - API_BASE_URL=${API_BASE_URL}
     ports:
       - "8300:3000"
     restart: unless-stopped
