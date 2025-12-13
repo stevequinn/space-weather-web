@@ -1,5 +1,7 @@
 # Space Weather Website
 
+![Space Weather](./assets/ss_mobile.jpeg)
+
 This is a frontend for the Space Weather API. It's a nice little app to show if there will be a geomagnetic storm today or in the near future, and perhaps an Aurora I can go and take silly photos of. 
 
 ## TODO
