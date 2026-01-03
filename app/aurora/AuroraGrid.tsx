@@ -73,7 +73,7 @@ export const AuroraGrid = ({ alert, watch, outlook }: AuroraGridProps) => {
               Predicted K-Index: {watch.k_aus}
             </div>
             <p className="text-sm text-amber-200/80">
-              {watch.start_time} - {watch.end_date} (UTC)
+              {watch.start_date} - {watch.end_date} (UTC)
             </p>
             <p className="text-sm text-slate-300 mt-2">{watch.description}</p>
           </>
