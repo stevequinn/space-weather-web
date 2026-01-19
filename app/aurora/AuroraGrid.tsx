@@ -44,15 +44,16 @@ export const AuroraGrid = ({ alert, watch, outlook }: AuroraGridProps) => {
             <div className="text-2xl font-semibold text-white">
               {alert.cause || "Geomagnetic Storm"}
             </div>
-            <p className="text-sm text-red-200">
+            <p className="text-xs text-red-200">
               Valid until:{" "}
               {alert.valid_until
-                ? new Date(alert.valid_until).toLocaleTimeString()
+                // ? new Date(alert.valid_until).toLocaleTimeString()
+                ? new Date(alert.valid_until).toLocaleString()
                 : "Unknown"}
             </p>
             {alert.lat_band && (
               <div className="mt-2 inline-block px-2 py-1 bg-red-500/20 rounded text-xs text-red-200">
-                {alert.lat_band}
+                Latitude Band: {alert.lat_band}
               </div>
             )}
             <p className="text-sm text-slate-300 mt-2">{alert.description}</p>
@@ -72,9 +73,11 @@ export const AuroraGrid = ({ alert, watch, outlook }: AuroraGridProps) => {
             <div className="text-xl font-medium text-amber-100">
               Predicted K-Index: {watch.k_aus}
             </div>
-            <p className="text-sm text-amber-200/80">
-              {watch.start_date} - {watch.end_date} (UTC)
-            </p>
+            {watch.start_date && watch.end_date && (
+              <p className="text-xs text-amber-200/80">
+                {new Date(watch.start_date).toLocaleString()} - {new Date(watch.end_date).toLocaleString()}
+              </p>  
+            )}
             <p className="text-sm text-slate-300 mt-2">{watch.description}</p>
           </>
         ) : (
